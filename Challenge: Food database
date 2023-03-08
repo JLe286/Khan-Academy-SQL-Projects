@@ -1,0 +1,13 @@
+/** favorite foods:
+Pho
+Ramen
+Rice
+**/
+
+CREATE TABLE foods (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER );
+
+INSERT INTO foods VALUES (1, "Pho", 10);
+INSERT INTO foods VALUES (2, "Ramen", 9);
+INSERT INTO foods VALUES (3, "Rice", 10);
+
+Select * From foods
