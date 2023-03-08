@@ -1,0 +1,21 @@
+CREATE TABLE teahouse (id INTEGER PRIMARY KEY, name TEXT, product TEXT, price INTEGER, temp TEXT);
+
+INSERT INTO teahouse VALUES (1, "Milk Tea", "Drink", 4.00, "Both");
+INSERT INTO teahouse VALUES (2, "Black Tea", "Drink", 3.75, "Both");
+INSERT INTO teahouse VALUES (3, "Green Tea", "Drink", 3.75, "Both");
+INSERT INTO teahouse VALUES (4, "Oolong Tea", "Drink", 4.00, "Both");
+INSERT INTO teahouse VALUES (5, "Coffee", "Drink", 4.50, "Both");
+INSERT INTO teahouse VALUES (6, "Smoothie", "Drink", 4.50, "Cold");
+INSERT INTO teahouse VALUES (7, "Slushie", "Drink", 4.25, "Cold");
+INSERT INTO teahouse VALUES (8, "Sparkling", "Drink", 3.25, "Cold");
+INSERT INTO teahouse VALUES (9, "Toppings", "Drink", 0.50, "NA");
+INSERT INTO teahouse VALUES (10, "Popcorn Chicken", "Food", 5.50, "Hot");
+INSERT INTO teahouse VALUES (11, "Popcorn Shrimp", "Food", 6.00, "Hot");
+INSERT INTO teahouse VALUES (12, "Calamari", "Food", 6.00, "Both");
+INSERT INTO teahouse VALUES (13, "Sweet Potato Fries", "Food", 4.00, "Hot");
+INSERT INTO teahouse VALUES (14, "Fries", "Food", 3.50, "Hot");
+INSERT INTO teahouse VALUES (15, "Eggrolls", "Food", 5.00, "Hot");
+
+Select * From teahouse Order By price;
+
+Select Sum(price) From teahouse;
