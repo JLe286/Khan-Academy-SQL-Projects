@@ -1,0 +1,26 @@
+CREATE TABLE clothes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type TEXT,
+    design TEXT);
+    
+INSERT INTO clothes (type, design)
+    VALUES ("dress", "pink polka dots");
+INSERT INTO clothes (type, design)
+    VALUES ("pants", "rainbow tie-dye");
+INSERT INTO clothes (type, design)
+    VALUES ("blazer", "black sequin");
+
+
+Alter Table clothes Add "price" Integer default "unknown";
+Select * From clothes;
+
+Update clothes set price = 10 Where id = 1;
+Update clothes set price = 20 Where id = 2;
+Update clothes set price = 30 Where id = 3;
+
+Select * From clothes;
+
+INSERT INTO clothes (type, design)
+    VALUES ("socks", "plain white");
+
+Select * From clothes;
